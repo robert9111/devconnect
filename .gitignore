@@ -1,2 +1,4 @@
 node_modules/
 default.json
+code-snippets/
+code_snippets/sendData.js
