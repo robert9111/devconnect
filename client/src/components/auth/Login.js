@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 
 //Creating a Login constant that takes in our data
 const Login = () => {
@@ -10,7 +9,7 @@ const Login = () => {
     });
 
     // Destructures the formData object and puts the data into respective fields
-    const { name, email, password, password2 } = formData;
+    const { email, password } = formData;
     //Creating on change function to set data = to its name in form
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
     // On submit function that checks passwords and registers user if data matches
